@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Your Virtual Psychologist - MindEase</title>
+    <link rel="stylesheet" href="style\chat.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="resources/logo.png" alt="MindEase Logo" class="logo">
+            <h1>MindEase</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chat-container">
+            <h2>Chat with Your Virtual Psychologist</h2>
+            <div class="chat-window" id="chat-window">
+            </div>
+            <div class="user-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button">Send</button>
+            </div>
+            <div class="quick-replies">
+                <button class="quick-reply" data-message="I feel stressed">I feel stressed</button>
+                <button class="quick-reply" data-message="Give me a self-care tip">Self-Care Tip</button>
+                <button class="quick-reply" data-message="Tell me something positive">Something Positive</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MindEase. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts\chat-script.js"></script>
+</body>
+</html>

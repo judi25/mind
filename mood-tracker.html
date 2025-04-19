@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker - MindEase</title>
+    <link rel="stylesheet" href="style\mood_tracker.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="resources/logo.png" alt="MindEase Logo" class="logo">
+            <h1>MindEase</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chatpage.html">Chat</a></li>
+                <li><a href="mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mood-tracker">
+            <h2>Mood Tracker</h2>
+            <p>Track your emotions and see your progress over time.</p>
+
+            <div class="mood-form">
+                <label for="mood-select">Select Mood:</label>
+                <select id="mood-select">
+                    <option value="😃 Happy">😃 Happy</option>
+                    <option value="🙂 Content">🙂 Content</option>
+                    <option value="😐 Neutral">😐 Neutral</option>
+                    <option value="😟 Stressed">😟 Stressed</option>
+                    <option value="😢 Sad">😢 Sad</option>
+                    <option value="😠 Angry">😠 Angry</option>
+                </select>
+
+                <label for="intensity">Intensity (0-10):</label>
+                <input type="range" id="intensity" min="0" max="10" value="5">
+
+                <label for="note">Add a Note:</label>
+                <textarea id="note" placeholder="How are you feeling today?"></textarea>
+
+                <button id="save-mood">Save Mood</button>
+            </div>
+
+            <div class="mood-history">
+                <h3>Mood History</h3>
+                <table id="mood-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Mood</th>
+                            <th>Intensity</th>
+                            <th>Note</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="mood-trends">
+                <h3>Mood Trends</h3>
+                <canvas id="mood-chart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MindEase. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts\mood-tracker.js"></script>
+</body>
+</html>
